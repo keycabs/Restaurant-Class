@@ -78,35 +78,15 @@ public void setSundayHours(String sundayHours) {
     this.sundayHours = sundayHours;
 }
 
-// Tells Java how to represent a Restaurant object as readable text
-@Override
-public String toString() {
-    return "Name: " + restaurantName
-            + "\nWait time: " + waitTime + " minutes"
-            + "\nRating: " + rating
-            + "\nAverage Price: " + averagePrice
-            + "\nWeekday Hours: " + weekdayHours
-            + "\nSaturday Hours: " + saturadayHours
-            + "\nSunday Hours: " + sundayHours;
-}
-
-    // The current main method displays sample restaurant information
-    public static void main(String[] args) {
-        String restaurantName = "keycabs's krusty krab";
-        int waitTime = 5;
-        double rating = 4.5;
-
-        String averagePrice = "$15-$35";
-        String weekdayHours = "8:00 AM - 10:00 PM";
-        String saturadayHours = "9:00 AM - 9:00 PM";
-        String sundayHours = "CLOSED";
-
-        // Creates object using constructor
-        Restaurant restaurant = new Restaurant(
-            restaurantName, waitTime, rating, averagePrice,
-            weekdayHours, saturadayHours, sundayHours
-    );
-
-        System.out.println(restaurant);
+    // Tells Java how to represent a Restaurant object as readable text
+    @Override
+    public String toString() {
+        return "Name: " + restaurantName
+                + "\nWait time: " + waitTime + " minutes"
+                + "\nRating: " + rating
+                + "\nAverage Price: " + averagePrice
+                + "\nWeekday Hours: " + weekdayHours
+                + "\nSaturday Hours: " + saturadayHours
+                + "\nSunday Hours: " + sundayHours;
     }
 }

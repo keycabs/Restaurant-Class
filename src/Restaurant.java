@@ -1,5 +1,5 @@
 public class Restaurant {
-    // Private fields store the information for each Restaurant object.
+    // Private fields store the information for each Restaurant object
     private String restaurantName;
     private int waitTime;
     private double rating;
@@ -21,7 +21,7 @@ String averagePrice, String weekdayHours, String saturadayHours, String sundayHo
     this.sundayHours = sundayHours;
 }   
 
-// Getters read field values; setters update them.
+// Getters read field values; setters update them
 public String getRestaurantName() {
     return restaurantName;
 }
@@ -78,7 +78,19 @@ public void setSundayHours(String sundayHours) {
     this.sundayHours = sundayHours;
 }
 
-    // The current main method displays sample restaurant information.
+// Tells Java how to represent a Restaurant object as readable text
+@Override
+public String toString() {
+    return "Name: " + restaurantName
+            + "\nWait time: " + waitTime + " minutes"
+            + "\nRating: " + rating
+            + "\nAverage Price: " + averagePrice
+            + "\n Weekday Hours: " + weekdayHours
+            + "\n Saturday Hours: " + saturadayHours
+            + "\n Sunday Hours: " + sundayHours
+}
+
+    // The current main method displays sample restaurant information
     public static void main(String[] args) {
         String restaurantName = "keycabs's krusty krab";
         int waitTime = 5;

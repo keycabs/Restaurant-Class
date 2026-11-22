@@ -87,7 +87,7 @@ public String toString() {
             + "\nAverage Price: " + averagePrice
             + "\n Weekday Hours: " + weekdayHours
             + "\n Saturday Hours: " + saturadayHours
-            + "\n Sunday Hours: " + sundayHours;
+            + "Sunday Hours: " + sundayHours;
 }
 
     // The current main method displays sample restaurant information

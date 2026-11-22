@@ -2,6 +2,12 @@ public class Restaurant {
     private String restaurantName;
     private int waitTime;
     private double rating;
+
+
+    private String averagePrice = "$15-$35";
+    private String weekdayHours = "8:00 AM - 10:00 PM";
+    private String saturadayHours = "9:00 AM - 9:00 PM";
+    private String sundayHours = "CLOSED";
     
     public static void main(String[] args) {
         String restaurantName = "keycabs's krusty krab";

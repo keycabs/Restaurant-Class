@@ -19,6 +19,15 @@ String averagePrice, String weekdayHours, String saturadayHours, String sundayHo
     this.sundayHours = sundayHours;
 }   
 
+// Getters and setters
+public String getRestaurantName() {
+    return restaurantName;
+}
+
+public void setRestaurantName(String restaurantName) {
+    this.restaurantName = restaurantName;
+}
+
     public static void main(String[] args) {
         String restaurantName = "keycabs's krusty krab";
         int waitTime = 5;

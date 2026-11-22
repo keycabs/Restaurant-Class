@@ -85,9 +85,9 @@ public String toString() {
             + "\nWait time: " + waitTime + " minutes"
             + "\nRating: " + rating
             + "\nAverage Price: " + averagePrice
-            + "\n Weekday Hours: " + weekdayHours
-            + "\n Saturday Hours: " + saturadayHours
-            + "Sunday Hours: " + sundayHours;
+            + "\nWeekday Hours: " + weekdayHours
+            + "\nSaturday Hours: " + saturadayHours
+            + "\nSunday Hours: " + sundayHours;
 }
 
     // The current main method displays sample restaurant information
@@ -101,14 +101,12 @@ public String toString() {
         String saturadayHours = "9:00 AM - 9:00 PM";
         String sundayHours = "CLOSED";
 
-        System.out.println("Name: " + restaurantName);
-        System.out.println("Wait time: " + waitTime + " minutes");
-        System.out.println("Rating: " + rating);
-        System.out.println("Price: " + averagePrice + "\n");
-        System.out.println("Hours open:");
-            
-        System.out.println("Monday - Friday: " + weekdayHours);
-        System.out.println("Saturday: " + saturadayHours);
-        System.out.println("Sunday: " + sundayHours);
+        // Creates object using constructor
+        Restaurant restaurant = new Restaurant(
+            restaurantName, waitTime, rating, averagePrice,
+            weekdayHours, saturadayHours, sundayHours
+    );
+
+        System.out.println(restaurant);
     }
 }

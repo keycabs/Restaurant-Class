@@ -1,7 +1,8 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Main {
-        public static void main(String[] args) {
+    public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -33,7 +34,10 @@ public class Main {
         Restaurant restaurant = new Restaurant(
             restaurantName, waitTime, rating, averagePrice,
             weekdayHours, saturadayHours, sundayHours
-    );
+        );
+
+        ArrayList<Restaurant> restaurants = new ArrayList<>();
+        restaurants.add(restaurant);
 
         System.out.println(restaurant);
     }

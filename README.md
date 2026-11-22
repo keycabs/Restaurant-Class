@@ -2,7 +2,13 @@
 
 ## Abstract
 
-This program displays basic information about my restaurant called Keycabs's Krusty Krab. Use of variables, different data types, and print statements.
+This program asks the user for a restaurant's name, wait time, rating, price range, and hours. It uses those values to create a restaurant and displays its information.
+
+## What I Learned
+
+The `Restaurant` class uses private fields to store each restaurant's information. Getters let other classes read those values, and setters let them update the values.
+
+The constructor gives a new `Restaurant` its starting values. In `Main`, the program passes the user's input to the constructor when it creates the object.
 
 ## Concepts Used
 
